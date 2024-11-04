@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Clinica Salud",
+        "description": "Web App para gestion de turnos medicos. CRUD y perfil con img para pacientes y medicos. Habilitacion de medicos y descagra de pdf de nomina desde panel de administrador.Medico: Gestion de disponibilidad - Aceptar,cancelar o finalizar turno - Agregar comentario de atencion - Descarga de CSV de turnos.Paciente: Obtener nuevo turno - Calificar Medico y ver grafica con primedio de medicos atendidos - Historial de turnos.",
+        "link": "https://clinicanew-30bd9.web.app/",
+        "tecnologias": ["Angular", "nodejs","Express","MySql","firebase","mdbGo"],
+        "image": "clinica-salud.jpg"
+    },
+    {
+        "name": "Anotador de tareas",
+        "description": "Anotador de tareas simple en react, utilizando el localStorage para almacenar las tareas. Agrega , elimina, busca y confirma tareas.",
+        "link": "https://anotadortareas.netlify.app/",
+        "tecnologias": ["react", "netlify"],
+        "image": "Anotador-tareas.jpg"
+    }
+]

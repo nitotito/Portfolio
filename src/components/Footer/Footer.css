@@ -1,0 +1,4 @@
+.footer {
+    position: relative; /* o static, dependiendo de tu diseño */
+    margin-top: auto; /* Esto puede ayudar a asegurarte de que el footer se sitúe al final */
+}
