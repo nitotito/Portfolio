@@ -32,6 +32,7 @@
   }
   
   .nav-links {
+    text-decoration: none;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -40,13 +41,21 @@
   
   .nav-links a {
     color: var(--light);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    transition: max-height 0.3s ease; 
     text-decoration: none;
-    transition: color 0.3s ease;
   }
   
   .nav-links a:hover {
     color: var(--accent);
   }
+
+  .nav-links.active {
+    display: block; /* Muestra el menú cuando está activo */
+}
 
   .animated-bg {
     position: absolute; /* Asegúrate de que el fondo se superponga a otros elementos */
@@ -84,6 +93,14 @@
     transition: opacity 700ms ease-in-out, transform 700ms ease-in-out;
 }
 
+.menu-toggle {
+  display: none; /* Oculta el botón por defecto */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--light);
+  cursor: pointer;
+}
 
   @keyframes gradient {
     0% {
@@ -95,4 +112,44 @@
     100% {
         background-position: 0% 50%;
     }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block; /* Muestra el botón en pantallas pequeñas */
+  }
+
+  .nav-links {
+      display: none; /* Oculta el menú por defecto */
+      flex-direction: column; /* Alinea verticalmente */
+      position: absolute; /* Para que se superponga */
+      top: 60px; /* Ajusta según tu diseño */
+      left: 0;
+      width: 100%; /* Para que ocupe todo el ancho */
+      background: rgba(45, 52, 54, 0.9); /* Fondo del menú */
+      z-index: 100; /* Asegúrate de que esté por encima */
+      padding: 0; /* Elimina el padding del contenedor */
+      gap: 0;
+  }
+
+  .nav-links.active {
+      display: flex; /* Muestra el menú cuando está activo */
+  }
+
+  .nav-links a {
+    padding: 0.5rem; /* Ajusta el padding a 0.5rem para compactar más */
+    font-size: 0.9rem;  /* Espaciado para los enlaces */
+      text-align: center; /* Centra el texto */
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 769px) {
+  .nav-links {
+      display: flex; /* Mostrar enlaces en fila en pantallas grandes */
+  }
+
+  .menu-toggle {
+      display: none; /* Ocultar botón en pantallas grandes */
+  }
 }

@@ -11,6 +11,7 @@
     margin-top: 2rem;
   }
   
+  
   .project-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
@@ -29,4 +30,34 @@
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+.project-title{
+  font-size: 1.8rem;
+  background: linear-gradient(45deg, var(--accent), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+  
+}
+
+.project-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(45deg, var(--accent), var(--secondary));
+  border-radius: 2px;
+  animation: widthAnimation 1.5s ease-in-out infinite;
+}
+
+.project-container{
+  margin: 2rem auto;
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  background: linear-gradient(145deg, --primary, --primary);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }

@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Sofware engineer",
+        "company": "FK tech",
+        "date": "May 2022 - Oct 2024",
+        "description": "Realización del mantenimiento y mejoras continuas de la plataforma del cliente, asegurando su funcionamiento óptimo y adaptación a nuevas necesidades, analizando,calificando y desarrollando historias de usuarios, nuevos requerimientos e issues de producción. Gestión del proceso de versionado y realización de pruebas para asegurar la estabilidad del software. Involucrado en todas las etapas del ciclo de vida del proyecto, desde la planificación y diseño hasta la implementación y mantenimiento.",
+        "skills": ["Javascript", "Node.js","React", "TypeScript", "C","C#","GitLab", "Jira", "Confluence","Invgate","Kanban"]
+    },
+    {
+        "title": "Analista técnico funcional",
+        "company": "Solcoy srl",
+        "date": "Oct 2020 - May 2022",
+        "description": "Supervisión y mantenimiento de equipos y sistemas. Configuración e implementación de nuevos equipos. Generación de informes semanales, con manipulacion y analisis de datos.Help desk, brindar soporte de nivel 1.Team Leader.",
+        "skills": ["Support", "Hardware", "Software", "Excel","PowerBI","TeamLeader"]
+    },
+    {
+        "title": "Street view driver",
+        "company": "Google",
+        "date": "Abr 2019 - Sept 2019",
+        "description": "Conductor de uno de los vehículos otorgados por la empresa para la recolección de datos. Marcado de errores. Team Leader, distribuir la información al equipo otorgada por el jefe de operaciones.",
+        "skills": ["TeamLeader"]
+    }
+]

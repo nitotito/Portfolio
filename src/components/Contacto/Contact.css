@@ -1,7 +1,7 @@
 .contact {
     padding: 4rem 2rem;
     text-align: center;
-    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background: linear-gradient(360deg, var(--secondary), var(--primary) 100%, var(--primary)100%);
   }
   
   .contact-form {
@@ -44,4 +44,11 @@
 
   .social-links{
     color: black;
+  }
+
+  .contact h2{
+    font-size: 1.8rem;
+    background: linear-gradient(45deg, var(--accent), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }

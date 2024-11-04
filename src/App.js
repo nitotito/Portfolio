@@ -5,6 +5,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contacto/Contact';
 import Footer from './components/Footer/Footer';
+import Experience from './components/Experience/Experience';
 import './assets/styles/styles.css';
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
                             </CSSTransition>
                             <CSSTransition classNames="fade" timeout={500}>
                                 <Projects />
+                            </CSSTransition>
+                            <CSSTransition classNames="fade" timeout={500}>
+                                <Experience />
                             </CSSTransition>
                             <CSSTransition classNames="fade" timeout={500}>
                                 <Contact />

@@ -7,6 +7,7 @@ import { CSSTransition } from 'react-transition-group';
 const Header = () => {
     const bgRef = useRef(null); 
     const [showContent, setShowContent] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
         useEffect(() => {
             const timer = setTimeout(() => {
@@ -44,11 +45,20 @@ const Header = () => {
         // Smooth scroll for navigation
         const anchors = document.querySelectorAll('a[href^="#"]');
         anchors.forEach(anchor => {
+            console.log("lalalala", anchor);
             const handleClick = (e) => {
                 e.preventDefault();
-                document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+               /*  document.querySelector(anchor.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
-                });
+                }); */
+                const targetId = e.currentTarget.getAttribute('href');
+                const targetElement = document.querySelector(targetId); // Seleccionamos el elemento
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    console.warn(`Elemento con ID ${targetId} no encontrado`); // Agregamos un mensaje de advertencia
+                }
             };
             anchor.addEventListener('click', handleClick);
 
@@ -65,13 +75,22 @@ const Header = () => {
         };
     }, []); // El arreglo vacío asegura que solo se ejecute al montar el componente
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen); 
+    };
+
     return (
         <header className='header'>
             <nav>
-                <ul className="nav-links">
+            <button className="menu-toggle" onClick={toggleMenu}>
+                    {/* Icono de menú hamburguesa */}
+                    &#9776;
+                </button>
+                <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">Sobre Mí</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#experience">Experiencias</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>

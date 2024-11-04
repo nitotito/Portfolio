@@ -24,14 +24,15 @@ const Projects = () => {
 
     return (
         <section className='projects' id="projects">
-            <h2>Proyectos</h2>
+             <div className="project-container">
+            <h2 className='project-title'>Proyectos personales</h2>
             <ul className='project-grid'>
                 {projects.map((project, index) => (
                     <li 
                         className='project-card' 
                         key={index} 
                         onClick={() => window.location.href = project.link}
-                        style={{ cursor: 'pointer' }} // Cambia el cursor al de "mano"
+                        style={{ cursor: 'pointer' }} 
                     >
                          <img 
                             src={process.env.PUBLIC_URL + `/assets/${project.image}`} 
@@ -50,6 +51,7 @@ const Projects = () => {
                     </li>
                 ))}
             </ul>
+        </div>
         </section>
     );
 };
