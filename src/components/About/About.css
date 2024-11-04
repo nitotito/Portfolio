@@ -42,3 +42,17 @@
     border-radius: 20px;
     font-size: 0.8rem;
   }
+
+  @media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .about-image {
+        height: 200px; /* Ajusta la altura de la imagen para pantallas pequeñas */
+    }
+
+    .skill-tag {
+        font-size: 0.9rem; /* Aumenta el tamaño de las etiquetas de habilidad */
+    }
+}
