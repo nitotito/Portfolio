@@ -1,9 +1,19 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef,useState  } from 'react';
 import './Header.css'
 import * as THREE from 'three';
+import '../../assets/styles/styles.css';
+import { CSSTransition } from 'react-transition-group';
 
 const Header = () => {
     const bgRef = useRef(null); 
+    const [showContent, setShowContent] = useState(false);
+
+        useEffect(() => {
+            const timer = setTimeout(() => {
+                setShowContent(true);
+            }, 100); // Ajusta el tiempo de retraso aquí
+            return () => clearTimeout(timer);
+        }, []);
 
     useEffect(() => {
         const scene = new THREE.Scene();
@@ -66,10 +76,15 @@ const Header = () => {
                 </ul>
             </nav>
             <div className="header-content" id="home">
-                <h1>Lopez Nicolas</h1>
-                <p>Creative Developer & Designer</p>
+                <CSSTransition in={showContent} classNames="fade" timeout={500}>
+                    <h1>Lopez Nicolas</h1>
+                </CSSTransition>
+                <CSSTransition in={showContent} classNames="fade" timeout={500}>
+                    <p>Desarrollador - Analista de sistemas</p>
+                </CSSTransition>
             </div>
-            <div className="animated-bg" ref={bgRef}></div> {/* Usamos la referencia aquí */}
+            
+            <div className="animated-bg"style={{ opacity: showContent ? 1 : 0 }} ref={bgRef}></div> {/* Usamos la referencia aquí */}
         </header>
     );
 };

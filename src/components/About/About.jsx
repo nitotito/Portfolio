@@ -1,15 +1,15 @@
 import React from 'react';
 import './About.css';
 
-const About = () => {
+const About = ({ className }) => {
     const skills = ['JavaScript','Angular','React', 'Node.js','React Native','NextJS','NestJS','Express','Vanilla JS','C','C#','PHP','JAVA','Python','MySQL','PostgreSQL','MongoDB','Git','GitLab','GitHub','TortoiseGit','Jira','Confluence','Invgate','Scrum','Kanban',];
 
     return (
-    <section class="about" id="about">
+    <section className={className} class="about" id="about">
     <div class="about-content">
       <div class="about-text">
         <h2>Sobre Mí</h2>
-        <p>Soy un desarrollador full stack con más de 2 años de experiencia, especializado en el desarrollo backend. En mi última experiencia laboral, nuestro principal cliente era Arcos Dorados, donde gestionaba historias de usuario y desarrollo e implementación de nuevos requerimientos. Mi experiencia incluye proporcionar soporte técnico de nivel 3, enfocándome en el análisis y la detección de problemas de código, lo que me ha permitido identificar y resolver errores complejos de manera efectiva para clientes en toda América Latina, México y Brasil.
+        <p>Soy un desarrollador full stack con más de 2 años de experiencia, especializado en el desarrollo backend.
             Además, estoy terminando la carrera de Analista de sistemas por lo que también tengo conceptos claros y bien definidos sobre la gestión de proyectos.
         </p>
         <div className="skills">
