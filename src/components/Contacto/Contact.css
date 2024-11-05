@@ -52,3 +52,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .download-icon {
+    transition: fill 0.3s ease;
+}

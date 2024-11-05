@@ -1,6 +1,6 @@
 [
     {
-        "title": "Sofware engineer",
+        "title": "Software engineer",
         "company": "FK tech",
         "date": "May 2022 - Oct 2024",
         "description": "Realización del mantenimiento y mejoras continuas de la plataforma del cliente, asegurando su funcionamiento óptimo y adaptación a nuevas necesidades, analizando,calificando y desarrollando historias de usuarios, nuevos requerimientos e issues de producción. Gestión del proceso de versionado y realización de pruebas para asegurar la estabilidad del software. Involucrado en todas las etapas del ciclo de vida del proyecto, desde la planificación y diseño hasta la implementación y mantenimiento.",
@@ -11,13 +11,20 @@
         "company": "Solcoy srl",
         "date": "Oct 2020 - May 2022",
         "description": "Supervisión y mantenimiento de equipos y sistemas. Configuración e implementación de nuevos equipos. Generación de informes semanales, con manipulacion y analisis de datos.Help desk, brindar soporte de nivel 1.Team Leader.",
-        "skills": ["Support", "Hardware", "Software", "Excel","PowerBI","TeamLeader"]
+        "skills": ["Help desk", "Hardware", "Software", "Excel","PowerBI","TeamLeader"]
     },
     {
         "title": "Street view driver",
         "company": "Google",
         "date": "Abr 2019 - Sept 2019",
-        "description": "Conductor de uno de los vehículos otorgados por la empresa para la recolección de datos. Marcado de errores. Team Leader, distribuir la información al equipo otorgada por el jefe de operaciones.",
+        "description": "Conductor de una de las unidades adaptado con camara 360 para la toma de imágenes y recolección de datos.Detección de errores.Team Leader: logistica y armado de rutas para los miembros del equipo. Coordinación del team, distribucion de informacion y equipos informaticos, control del service y hardware de las unidades.",
         "skills": ["TeamLeader"]
+    },
+    {
+        "title": "Data entry",
+        "company": "Solcoy srl",
+        "date": "Oct 2008 - Dic 2018",
+        "description": "Supervisión y mantenimiento de equipos y sistemas. Configuración e implementación de nuevos equipos.Captura de datos de forma manual y , asimismo, asistido por reconocimiento óptico de caracteres.Carga y control de débitos a farmacias adheridas BANCOPROVINCIA, PAMI, OSETYA, OSBA , CMP.Team Leader, reemplazar al supervisor en caso de ausencia o periodo de vacaciones.",
+        "skills": ["TeamLeader","Data Analist","Excel","Help desk", "Hardware", "Software"]
     }
 ]
