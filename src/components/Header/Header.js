@@ -80,7 +80,7 @@ const Header = () => {
     };
 
     return (
-        <header className='header'>
+        <header className='header' id="home">
             <nav>
             <button className="menu-toggle" onClick={toggleMenu}>
                     {/* Icono de menú hamburguesa */}
@@ -94,7 +94,7 @@ const Header = () => {
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
-            <div className="header-content" id="home">
+            <div className="header-content">
                 <CSSTransition in={showContent} classNames="fade" timeout={500}>
                     <h1>Lopez Nicolas</h1>
                 </CSSTransition>
