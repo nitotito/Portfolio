@@ -12,6 +12,28 @@ function App() {
 
   const [isVisible, setIsVisible] = useState(false);
 
+  useEffect(() => {
+    // Crear el cursor
+    const cursor = document.createElement('div');
+    cursor.classList.add('cursor');
+    document.body.appendChild(cursor);
+
+    // Actualiza la posición del cursor
+    const updateCursor = (e) => {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+    };
+
+    // Agregar el evento mousemove
+    window.addEventListener('mousemove', updateCursor);
+
+    // Limpiar el evento y eliminar el cursor al desmontar
+    return () => {
+        window.removeEventListener('mousemove', updateCursor);
+        document.body.removeChild(cursor); // Asegúrate de que el cursor se elimine correctamente
+    };
+}, []);
+
     useEffect(() => {
       const timer = setTimeout(() => {
           setIsVisible(true);

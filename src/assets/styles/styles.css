@@ -58,6 +58,23 @@
     transition: opacity 500ms ease, transform 500ms ease;
   }
 
+  .cursor {
+    position: fixed;
+    width: 25px; /* Ajusta el tamaño del círculo */
+    height: 25px; /* Ajusta el tamaño del círculo */
+    border-radius: 50%; /* Hace que el círculo sea redondo */
+    /* background: linear-gradient(45deg, var(--accent), var(--secondary),0.8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    
+    pointer-events: none; /* Evita que interfiera con los clics del mouse */
+    transform: translate(-50%, -50%); /* Centra el círculo en el puntero */
+    transition: background-color 2.0 ease; /* Efecto de transición en el color */
+    z-index: 9999; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    opacity: 0.9;
+}
+
   @keyframes gradient {
     0% {
       background-position: 0% 50%;

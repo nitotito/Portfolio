@@ -10,7 +10,7 @@ const About = ({ className }) => {
       <div class="about-text">
         <h2>Sobre Mí</h2>
         <p>Soy un desarrollador full stack con más de 2 años de experiencia, especializado en el desarrollo backend.
-            Además, estoy terminando la carrera de Analista de sistemas por lo que también couento con conceptos claros y bien definidos sobre la gestión de proyectos.
+            Además, estoy terminando la carrera de Analista de sistemas por lo que también cuento con conceptos claros y bien definidos sobre la gestión de proyectos.
         </p>
         <div className="skills">
             {skills.map((skill, index) => (
