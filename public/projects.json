@@ -12,5 +12,13 @@
         "link": "https://anotadortareas.netlify.app/",
         "tecnologias": ["react", "netlify"],
         "image": "Anotador-tareas.jpg"
+    },
+    {
+        "name": "Juego preguntas y respuestas",
+        "description": "Juego sencillo en react.Se utiliza locasStorage para guardar nombre de quien participa.Al finalizar la partida, toma el nombre y lo almacena en firebase storage junto a la puntuacion, si el nombre se encuentra en dentro del storage, actualiza la puntuacion solo si ésta es mayor a la ya almacenada. Al primer ingreso si localStorage esta vacio, solciita ingreso de nombre. En home se puede ver planilla de puntuaciones de jugadores , ver instrucciones y agregar nuevo jugador.",
+        "link": "https://anotadortareas.netlify.app/",
+        "tecnologias": ["react", "netlify"],
+        "image": "PreguntasRespuestas.jpg"
+
     }
 ]
